@@ -1,0 +1,36 @@
+{
+  "name": "node-ts-express-boiler-plate",
+  "version": "1.0.0",
+  "description": "Express Server in nodejs using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix": "eslint . --ext .ts --fix",
+    "lint": "eslint . --ext .ts",
+    "build": "node_modules/typescript/bin/tsc",
+    "build:watch": "node_modules/typescript/bin/tsc -w",
+    "start-server": "nodemon dist/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "ts",
+    "boilerplate",
+    "express"
+  ],
+  "author": "Yousaf raza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.3"
+  }
+}
